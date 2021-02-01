@@ -6,7 +6,7 @@ function map(src, cb) {
     return r
   }
 
-  function reduce(src, cb, start=0) {
+  function reduce(src, cb, start) {
     let sum = (!!start) ? start : src[0]
     let i = (!!start) ? 0 : 1
     for (; i < src.length; i++) {
